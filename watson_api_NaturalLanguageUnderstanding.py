@@ -10,8 +10,7 @@ natural_language_understanding = NaturalLanguageUnderstandingV1(
     password='eFJQNjG8LoZs')
 
 response = natural_language_understanding.analyze(
-    text='Bruce Banner is the Hulk and Bruce Wayne is BATMAN! '
-         'Superman fears not Banner, but Wayne.',
+    text='RT @blackbookpolls: Congratulations Fujitsu on your Black Book Award #HIMSS17 @FujitsuAmerica @Fujitsu_Global https://t.co/oXUJoGPtcu',
     features=[features.Entities(), features.Keywords()])
 
 print(json.dumps(response, indent=2))
